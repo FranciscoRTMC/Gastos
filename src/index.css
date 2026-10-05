@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #071226;
+  --color-navy-900: #0b1a33;
+  --color-navy-850: #0f2142;
+  --color-navy-800: #13284d;
+  --color-navy-700: #1c3766;
+  --color-navy-600: #284a85;
+  --color-navy-400: #6f88b8;
+  --color-navy-300: #9fb3d9;
+  --color-navy-100: #e6ecf5;
+  --color-accent: #4c8dff;
+  --color-accent-strong: #3577f0;
+  --font-sans: "Inter", system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-navy-950 text-navy-100 antialiased;
+  font-family: var(--font-sans);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.8);
+  cursor: pointer;
+}
