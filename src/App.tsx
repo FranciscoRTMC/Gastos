@@ -156,7 +156,7 @@ export default function App() {
               </div>
             </div>
 
-            {view !== 'day' && <PeriodChart view={view} period={period} expenses={current} today={today} />}
+            {view !== 'day' && current.length > 0 && <PeriodChart view={view} period={period} expenses={current} today={today} />}
           </div>
 
           <ExpenseList
